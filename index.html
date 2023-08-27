@@ -10,9 +10,8 @@
         body {
             /* height: max-content; */
             /* height: 1800px; */
-             zoom: 75%; 
+            zoom: 75%; 
             width: fit-content;
-
         }
 
 
@@ -437,7 +436,6 @@
         .box:hover {
             background-color: rgb(187, 204, 204);
 
-
         }
 
         label {
@@ -685,7 +683,7 @@
                 <p1>AMBITION IS THE FIRST STEP TOWARDS</p1>
                 <h2 id="Success">SUCCESS</h2>
                 <P2>Now Available for Online Coaching</P2>
-                <button class="button" type="button"><a href="https://www.myroomup.com/">Login now</a> </button>
+                <button class="button" type="button"><a href="login.html">Login now</a> </button>
             </div>
 
         </div>
@@ -696,7 +694,7 @@
                 <img src="bg/WhatsApp Image 2023-06-20 at 7.35.17 AM.jpg" alt="error">
             </div> -->
 
-            <p6 class="selfpara"><a>ABOUT-ME</a>
+            <p6 class="selfpara"><a class="a12">ABOUT-ME</a>
 
                 <a6>"I'm a life coach specializing in helping people overcome their challenges and create the life they
                     want. My passion is to help others realize their full potential, build self-confidence, and find
@@ -720,7 +718,7 @@
 
     </div>
     <div id="services">
-        <a12>How I Can Help You</a12>
+        <a12 class="a12">How I Can Help You</a12>
         <div class="container">
 
             <div class="item-cont" id="item1">ONLINE COACHING <p8>
@@ -768,7 +766,7 @@
 
     <div id="feedback">
         <div class="feedback-box">
-            <a12>feedback-form</a12>
+            <a12 class="a12">feedback-form</a12>
             <form action="" class="form">
                 <div class="input-box">
                     <span class="icon">
@@ -855,7 +853,7 @@
     //     document.getElementById('time').innerHTML = time;
     // }
     // setInterval(time, 1000);
-
+    
     const sr = ScrollReveal({
         distance: '65px',
         duration: 1800,
@@ -864,10 +862,11 @@
     });
 
     sr.reveal('.heading-2', { delay: 100, origin: 'top' });
-    sr.reveal('.container', { delay: 100, origin: 'top' });
-    sr.reveal('a12', { delay: 100, origin: 'left' });
+    // sr.reveal('.container', { delay: 100, origin: 'top' });
+    sr.reveal('.a12', { delay: 100, origin: 'left' });
     sr.reveal('.selfimage', { delay: 100, origin: 'left' });
     sr.reveal('#new', { delay: 10, origin: 'left' });
+    sr.reveal('#feedback', { delay: 100, origin: 'top' });
 </script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
