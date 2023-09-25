@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Success.com</title>
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body {
             /* height: max-content; */
             /* height: 1800px; */
-            zoom: 75%; 
+            /* zoom: 85%; */
+            
             width: fit-content;
+            /* width: 100%; */
         }
 
 
@@ -721,7 +723,7 @@
         <a12 class="a12">How I Can Help You</a12>
         <div class="container">
 
-            <div class="item-cont" id="item1">ONLINE COACHING <p8>
+            <div class="item-cont" id="item1" data-aos="flip-down">ONLINE COACHING <p8>
                     <form action="Noaction.php" class="from">
                         <p9>Use this area to describe one of your services.</p9>
                         <div class="input-box">
@@ -735,7 +737,7 @@
                     </form>
                 </p8>
             </div>
-            <div class="item-cont" id="item2">COUPLE GUIDENCE <p8>
+            <div class="item-cont" id="item2" data-aos="flip-down">COUPLE GUIDENCE <p8>
                     <form action="Noaction.php" class="from">
                         <p9>Use this area to describe one of your services.</p9>
                         <div class="input-box">
@@ -748,7 +750,7 @@
                         <button class="button" type="button">BOOK NOW</button>
                     </form>
             </div>
-            <div class="item-cont" id="item3">ENTREPRENEURSHIP <p8>
+            <div class="item-cont" id="item3" data-aos="flip-down">ENTREPRENEURSHIP <p8>
                     <form action="Noaction.php" class="from">
                         <p9>Use this area to describe one of your services.</p9>
                         <div class="input-box">
@@ -764,32 +766,32 @@
         </div>
     </div>
 
-    <div id="feedback">
+    <div id="feedback" >
         <div class="feedback-box">
             <a12 class="a12">feedback-form</a12>
             <form action="" class="form">
-                <div class="input-box">
+                <div class="input-box" data-aos="zoom-in-left">
                     <span class="icon">
                         <ion-icon name="logo-snapchat"></ion-icon>
                     </span>
                     <input type="text" required>
                     <label> Name</label>
                 </div>
-                <div class="input-box">
+                <div class="input-box" data-aos="zoom-in-right">
                     <span class="icon">
                         <ion-icon name="mail"></ion-icon>
                     </span>
                     <input type="Email" required>
                     <label>Email</label>
                 </div>
-                <div class="input-box">
+                <div class="input-box" data-aos="zoom-in-left">
                     <span class="icon">
                         <ion-icon name="call"></ion-icon>
                     </span>
                     <input type="number" required>
                     <label>Phone</label>
                 </div>
-                <div class="input-box">
+                <div class="input-box" data-aos="zoom-in-right">
                     <span class="icon">
                         <ion-icon name="chatbox"></ion-icon>
                     </span>
@@ -803,7 +805,7 @@
             </form>
         </div>
     </div>
-    <div id="contact">
+    <div id="contact" >
         <a12>Contact Us</a12>
         <div class="address">
             <p>117 Mega boys hostel - A </p>
@@ -814,7 +816,7 @@
                     <ion-icon name="call"></ion-icon>
                 </span> +916387259583 </p>
         </div>
-        <div class="contactimg">
+        <div class="contactimg" data-aos="zoom-in">
             <a href="https://www.threads.net/@1182_anoop_11989" target="_blank">
                 <img src="Threads_(app)_logo.svg.png" alt="">
             </a>
@@ -866,9 +868,18 @@
     sr.reveal('.a12', { delay: 100, origin: 'left' });
     sr.reveal('.selfimage', { delay: 100, origin: 'left' });
     sr.reveal('#new', { delay: 10, origin: 'left' });
-    sr.reveal('#feedback', { delay: 100, origin: 'top' });
+    // sr.reveal('#feedback', { delay: 100, origin: 'top' });
 </script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
 
+    AOS.init(
+        {
+            // offset: 550,
+            duration: 1000
+        }
+    );
+  </script>
 </html>
